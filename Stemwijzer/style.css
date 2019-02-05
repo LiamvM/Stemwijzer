@@ -1,0 +1,36 @@
+body {
+	background-image: url(images/background.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#stemwijzer-logo {
+  height: 58px;
+  width: 331px;
+}
+
+.right-column {
+	background-color: #01B4DC;
+}
+
+.title {
+	color: #01B4DC;
+}
+
+.start-button {
+	width: 145px;
+	height: 52px;
+	background-color: black;
+	color: white;
+	margin-left: 35%;
+	margin-top: 50px;
+	font-weight: bold;
+}
+
+#right-col-img {
+	margin-bottom: 20px;
+	width: 120px;
+	height: 25px;
+	margin-left: 21%;
+	margin-top: 20px;
+}
