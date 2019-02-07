@@ -33,4 +33,65 @@ body {
 	height: 25px;
 	margin-left: 21%;
 	margin-top: 20px;
+	margin-right: 21%;
+}
+
+#statement {
+	font-weight: 400;
+}
+
+
+#header {
+	font-weight: 600;
+	color: #01B4DC;
+}
+
+.buttonGoBack {
+	height: 40px;
+	width: 40px;
+	border: 1px solid #E7EAEB;
+	border-radius: 50px !important;
+	margin-left: -9%;
+}
+
+.arrow-left {
+	font-weight: 400;
+}
+
+.question-layout {
+	padding-left: 10% !important;
+}
+
+#question-number {
+	
+}
+
+.buttonEens {
+	background-color: #000000;
+	color: #ffffff;
+}
+
+.buttonOneens {
+	background-color: #000000;
+	color: #ffffff;
+}
+
+.buttonGeenVanBeide {
+	background-color: #000000;
+	color: #ffffff;
+}
+
+.buttonSlaOver {
+	color: grey;
+	cursor: pointer;
+}
+
+.buttonSlaOver:hover > .fa-arrow-right {
+	transition: transform 0.5s;
+	transform: translateX(10px);
+}
+
+.fa-arrow-right {
+	transition: transform 0.5s;
+	color: grey;
 }

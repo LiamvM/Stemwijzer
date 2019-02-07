@@ -1,8 +1,7 @@
-var subjects = 
-[
+var subjects = [
 /* example subject with parties and their positions:
 {
-	title: "subject title",
+	header: "subject header",
 	statement: "subject statement",
 	parties: [
 		{name: "party1", position: "pro", explanation: "explains why pro"},
@@ -12,7 +11,7 @@ var subjects =
 }
 */
 {
-	title: "Bindend referendum",
+	header: "Bindend referendum",
 	statement: "Er moet een bindend referendum komen, waarmee burgers door het parlement aangenomen wetten kunnen tegenhouden.",
 	parties: [
 		{name: "PVV", position: "pro", explanation: "Geen toelichting gegeven"},
@@ -40,7 +39,7 @@ var subjects =
 	]
 },
 {
-	title: "Maatschappelijke dienstplicht",
+	header: "Maatschappelijke dienstplicht",
 	statement: "Er moet een maatschappelijke dienstplicht voor jongeren komen. Zij kunnen dan dienen in het leger, bij de politie of in de zorg.",	
 	parties: [
 	{name: "PvdA", position: "pro", explanation: "Juist als je jong bent is het van groot belang de samenleving te leren kennen en je er voor in te zetten. Maatschappelijke dienstplicht is een goede manier om jongeren kennis te laten maken met andere kanten van de samenleving. Dat vergroot het begrip en is goed voor de onderlinge verbinding."},
@@ -68,7 +67,7 @@ var subjects =
 	]
 },
 {
-	title: "Anoniem solliciteren",
+	header: "Anoniem solliciteren",
 	statement: "Om discriminatie op basis van de naam te voorkomen, moet anoniem solliciteren bij de overheid en bij openbare instellingen de regel worden.",
 	parties: [
 	{name: "PvdA", position: "pro", explanation: "Het zou eigenlijk niet nodig moeten zijn dat mensen hun leeftijd, naam of geslacht achterwege houden. Maar zolang deze vorm van discriminatie een feit is moeten we die aanpakken ÃƒÂ©n mensen de kans geven om uitgenodigd te worden voor een sollicitatiegesprek. Anoniem solliciteren biedt dat perspectief."},
@@ -96,7 +95,7 @@ var subjects =
 	] 
 },
 {
-	title: "Groepsbelediging",
+	header: "Groepsbelediging",
 	statement: "Belediging van groepen op grond van ras, godsdienst of geaardheid moet niet langer strafbaar zijn.",
 	parties: [
 	{name: "VVD", position: "pro", explanation: "De VVD gaat uit van het individu, niet de groep. Een groep kan niet beledigd zijn, leden van een groep wel. Individuele belediging is op dit moment strafbaar en moet dat blijven."},
@@ -105,7 +104,6 @@ var subjects =
 	{name: "VNL", position: "pro", explanation: "Wij zijn een groot voorstander van de vrijheid van meningsuiting. Het debat hoort thuis in de samenleving en het parlement, niet in de rechtszaal. Het mag niet zo zijn dat tekenaars uit hun bed worden gehaald door de politie (zoals gebeurde bij Gregorius Nekschot) of dat politici vanwege hun mening worden veroordeeld (zoals bij Wilders)."},
 	{name: "Forum voor Democratie", position: "pro", explanation: "FVD maakt zich bij uitstek hard voor de Vrijheid van Meningsuiting. We zijn zelfs een petitie gestart naar aanleiding van de veroordeling van Geert Wilders, waarbij we pleiten voor de afschaffing van artikelen 137c en 137d uit het Wetboek van Strafrecht. Voor ons staat vrijheid van meningsuiting op de allereerste plek."},
 	{name: "Libertarische Partij", position: "pro", explanation: "Vrijheid van meningsuiting is een groot goed. Zolang er niet wordt opgeroepen tot geweld, vinden wij dat burgers in het publieke debat moeten kunnen zeggen wat ze willen. Daar staat tegenover dat impopulaire meningen hand en tand bestreden kunnen worden. Dit is de essentie van een vrije samenleving."},
-
 	{name: "Piratenpartij", position: "ambivalent", explanation: "De Piratenpartij is tegen het strafbaarstellen van beledigingen. Discriminatie (een beoordeling op basis van ras, godsdienst of geaardheid) moet echter wÃ©l strafbaar blijven. De Piratenpartij wil niet tornen aan het recht op gelijke behandeling."},
 	{name: "PvdA", position: "contra", explanation: "Vrijheid van meningsuiting is een recht. Beledigen op grond van ras, godsdienst of geaardheid is dat niet. Net als het aanzetten tot haat jegens elkander."},
 	{name: "SP", position: "contra", explanation: "De strafbaarheid op belediging van groepen blijkt in de praktijk een nuttig middel om bijvoorbeeld antisemitisme of religieuze haatoproepen tegen homoseksuelen tegen te gaan."},
@@ -125,7 +123,7 @@ var subjects =
 	]
 },
 {
-	title: "Teelt en verkoop wiet",
+	header: "Teelt en verkoop wiet",
 	statement: "De teelt en verkoop van wiet moet legaal worden.",
 	parties: [
 	{name: "PvdA", position: "pro", explanation: "Het legaliseren van Wiet levert alleen maar voordelen op: de politie kan zich richten op de echte misdaad, de wiet wordt minder schadelijk en de samenleving ontvangt extra inkomsten - niet de misdadigers - waar we goede dingen mee kunnen doen."},
@@ -153,7 +151,7 @@ var subjects =
 	]
 },
 {
-	title: "Vervroegde vrijlating",
+	header: "Vervroegde vrijlating",
 	statement: "De vervroegde vrijlating onder voorwaarden van gevangenen moet stoppen. Zij moeten hun straf helemaal uitzitten.",
 	parties: [
 	{name: "VVD", position: "pro", explanation: "Iemand die een gevangenisstraf krijgt moet deze voor de volledige duur uitzitten. Het automatisme dat iemand na tweederde van de straf in aanmerking komt voor vervroegde vrijlating, wil de VVD afschaffen. "},
@@ -181,7 +179,7 @@ var subjects =
 	]
 },
 {
-	title: "Vennootschapsbelasting",
+	header: "Vennootschapsbelasting",
 	statement: "De belasting over de winst van ondernemingen (vennootschapsbelasting) moet omlaag.",
 	parties: [
 	{name: "VVD", position: "pro", explanation: "Om bedrijven in Nederland te houden en meer bedrijven hier te krijgen, willen wij de vennootschapsbelasting verlagen. Zo kunnen bedrijven de concurrentie met omringende landen aan en blijven banen in Nederland."},
@@ -233,8 +231,47 @@ var parties = [
 	{name: "Libertarische Partij", secular: true, size: 0}
 ];
 
-function goStemWijzer(event) {
+var questionNumber = 1;
+var subjectIndex = 0;
+
+document.getElementById("statement").innerText = subjects[subjectIndex].statement;
+document.getElementById("header").innerText = questionNumber + ". " + subjects[subjectIndex].header;
+
+eens = "eens"
+oneens = "oneens"
+
+function startStemWijzer(event) {
 	event.preventDefault();
-	alert("Hallo!");
+	console.log(event);
+
 	return false;
 }
+
+function nextQuestion() {
+	if (subjectIndex + 1 !== subjects.length) {
+		questionNumber += 1;
+		subjectIndex +=1;
+		document.getElementById("statement").innerText = subjects[subjectIndex].statement;
+		document.getElementById("header").innerText = questionNumber + ". " + subjects[subjectIndex].header;
+	} else {
+		return;	
+	}
+	
+}
+
+function previousQuestion() {
+	questionNumber -= 1;
+	subjectIndex -=1;
+	document.getElementById("statement").innerText = subjects[subjectIndex].statement;
+	document.getElementById("header").innerText = questionNumber + ". " + subjects[subjectIndex].header;
+}
+
+function noAnswer() {
+	questionNumber += 1;
+	subjectIndex +=1;
+	document.getElementById("statement").innerText = subjects[subjectIndex].statement;
+	document.getElementById("header").innerText = questionNumber + ". " + subjects[subjectIndex].header;
+
+}
+
+

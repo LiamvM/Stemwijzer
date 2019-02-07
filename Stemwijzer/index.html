@@ -4,16 +4,32 @@
 	<title>Stemwijzer</title>
 	
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 </head>
 <body>
 	<div class="container">
 		<div class="row">
+			<div class="col-12 bg-white mt-4 pb-5 pt-3 question-layout">
+				<button onclick="previousQuestion()" class="btn btn-default buttonGoBack">
+					<i class="fas fa-arrow-left arrow-left"></i>
+				</button>
+				<div class="pl-3 pt-2 pr-5">
+					<h2 id="header" class="pb-2 pt-2"><span id="question-number"></span></h2>
+					<h3 id="statement" class="pb-4"></h3>
+					<button onclick="nextQuestion()" class="btn btn-default buttonEens">Eens</button>
+					<button onclick="nextQuestion()" class="btn btn-default buttonGeenVanBeide">Geen van beide</button>
+					<button onclick="nextQuestion()" class="btn btn-default buttonOneens">Oneens</button>
+					<a onclick="nextQuestion()" class="buttonSlaOver">Sla deze vraag over <i class="fas fa-arrow-right"></i></a>	
+				</div>
+			</div>
+		</div>
+		<div class="row d-none">
 			<div class="col-9 mt-4 bg-white pl-5 pr-5">
 				<img id="stemwijzer-logo" src="images/logo-stemwijzer.svg" class="mt-5"></img>
 				<h5>StemWijzer ROC Davinci College 2019</h5>
 				<h2 class="title">Test uw politieke voorkeur aan de hand van 30 stellingen</h2>
-				<button class="btn btn-default start-button" onclick="goStemWijzer(event)">Start</button>
+				<button class="btn btn-default start-button" onclick="startStemWijzer(event)">Start</button>
 			</div>
 			<div class="right-column col-3 mt-4 pt-2">
 				<img id="right-col-img" src="images/something.png">
@@ -26,8 +42,6 @@
 			<div class="col-12"></div>
 		</div>
 	</div>
-
-
 
 
 
